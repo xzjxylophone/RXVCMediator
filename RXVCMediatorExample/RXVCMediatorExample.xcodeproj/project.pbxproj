@@ -12,6 +12,8 @@
 		58B9A8631BF48EFB003DE017 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58B9A8621BF48EFB003DE017 /* Assets.xcassets */; };
 		58B9A8701BF48FB5003DE017 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B9A86E1BF48FB5003DE017 /* MainViewController.m */; };
 		58B9A8711BF48FB5003DE017 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58B9A86F1BF48FB5003DE017 /* MainViewController.xib */; };
+		58B9A8751BF4910F003DE017 /* UIViewController+Mediator.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B9A8741BF4910F003DE017 /* UIViewController+Mediator.m */; };
+		58B9A8781BF49230003DE017 /* RXVCMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B9A8771BF49230003DE017 /* RXVCMediator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,10 @@
 		58B9A86D1BF48FB5003DE017 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		58B9A86E1BF48FB5003DE017 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		58B9A86F1BF48FB5003DE017 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		58B9A8731BF4910F003DE017 /* UIViewController+Mediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Mediator.h"; sourceTree = "<group>"; };
+		58B9A8741BF4910F003DE017 /* UIViewController+Mediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Mediator.m"; sourceTree = "<group>"; };
+		58B9A8761BF49230003DE017 /* RXVCMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RXVCMediator.h; sourceTree = "<group>"; };
+		58B9A8771BF49230003DE017 /* RXVCMediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RXVCMediator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,7 @@
 		58B9A8551BF48EFB003DE017 /* RXVCMediatorExample */ = {
 			isa = PBXGroup;
 			children = (
+				58B9A8721BF490F2003DE017 /* RXVCMediator */,
 				58B9A8591BF48EFB003DE017 /* AppDelegate.h */,
 				58B9A85A1BF48EFB003DE017 /* AppDelegate.m */,
 				58B9A8621BF48EFB003DE017 /* Assets.xcassets */,
@@ -74,6 +81,18 @@
 				58B9A8571BF48EFB003DE017 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		58B9A8721BF490F2003DE017 /* RXVCMediator */ = {
+			isa = PBXGroup;
+			children = (
+				58B9A8731BF4910F003DE017 /* UIViewController+Mediator.h */,
+				58B9A8741BF4910F003DE017 /* UIViewController+Mediator.m */,
+				58B9A8761BF49230003DE017 /* RXVCMediator.h */,
+				58B9A8771BF49230003DE017 /* RXVCMediator.m */,
+			);
+			name = RXVCMediator;
+			path = ../../RXVCMediator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +167,8 @@
 				58B9A85B1BF48EFB003DE017 /* AppDelegate.m in Sources */,
 				58B9A8701BF48FB5003DE017 /* MainViewController.m in Sources */,
 				58B9A8581BF48EFB003DE017 /* main.m in Sources */,
+				58B9A8751BF4910F003DE017 /* UIViewController+Mediator.m in Sources */,
+				58B9A8781BF49230003DE017 /* RXVCMediator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
