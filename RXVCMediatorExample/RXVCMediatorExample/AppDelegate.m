@@ -7,9 +7,8 @@
 //
 
 #import "AppDelegate.h"
-#import "MainViewController.h"
+#import "RXVCMediatorHeader.h"
 @interface AppDelegate ()
-@property (nonatomic, strong) UINavigationController *mainNC;
 
 @end
 
@@ -17,20 +16,16 @@
 
 - (void)showMain
 {
-    UIViewController *vc = nil;
-    vc = [[MainViewController alloc] init];
-    self.mainNC = [[UINavigationController alloc] initWithRootViewController:vc];
-    NSDictionary *dic = @{NSFontAttributeName:[UIFont systemFontOfSize:19]};
-    [self.mainNC.navigationBar setTitleTextAttributes:dic];
-    self.window.rootViewController = self.mainNC;
+    NSDictionary *query = @{@"param1":@"param1Value",
+                            @"param2":@"param2Vale"};
+    UIViewController *vc = [UIViewController rx_vcWithString:@"rxpage://MainViewController?a=1&b=2&c=3" query:query];
+    UINavigationController *nc = [[UINavigationController alloc] initWithRootViewController:vc];
+    self.window.rootViewController = nc;
 }
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    
     [self showMain];
-    
     [self.window makeKeyAndVisible];
     
     return YES;

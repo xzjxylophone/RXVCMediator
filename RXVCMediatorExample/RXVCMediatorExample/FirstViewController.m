@@ -1,31 +1,22 @@
 //
-//  MainViewController.m
+//  FirstViewController.m
 //  RXVCMediatorExample
 //
-//  Created by Rush.D.Xzj on 15/11/12.
+//  Created by Rush.D.Xzj on 15/11/13.
 //  Copyright © 2015年 Rush.D.Xzj. All rights reserved.
 //
 
-#import "MainViewController.h"
-#import "RXVCMediatorHeader.h"
+#import "FirstViewController.h"
 
-@interface MainViewController ()
+@interface FirstViewController ()
 
 @end
 
-@implementation MainViewController
-- (IBAction)btnNextTouchUpInside:(id)sender {
-    [RXVCMediator pushInNavigationController:self.navigationController withString:@"rxpage://FirstViewController" query:nil animate:YES];
-}
-
-
-
+@implementation FirstViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    NSLog(@"string=%@, query=%@, params=%@", self.rx_string, self.rx_query, self.rx_params);
-    
 }
 
 - (void)didReceiveMemoryWarning {
