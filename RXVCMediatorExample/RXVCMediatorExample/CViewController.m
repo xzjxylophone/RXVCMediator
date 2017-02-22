@@ -1,39 +1,46 @@
 //
-//  MainViewController.m
+//  CViewController.m
 //  RXVCMediatorExample
 //
-//  Created by Rush.D.Xzj on 15/11/12.
-//  Copyright © 2015年 Rush.D.Xzj. All rights reserved.
+//  Created by ceshi on 17/2/21.
+//  Copyright © 2017年 Rush.D.Xzj. All rights reserved.
 //
 
-#import "MainViewController.h"
+#import "CViewController.h"
 #import "RXVCMediatorHeader.h"
 
-@interface MainViewController ()
+@interface CViewController ()
 
 @end
 
-@implementation MainViewController
-- (IBAction)btnNextTouchUpInside:(id)sender {
-    [RXVCMediator pushInNavigationController:self.navigationController withString:@"rxpage://AViewController" query:@{@"data":@(1)} animate:NO];
-}
-
-
-
+@implementation CViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    NSLog(@"string=%@, query=%@, params=%@", self.rx_string, self.rx_query, self.rx_params);
     
-    self.title = @"Main";
     
+    self.title = @"C";
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
+
+- (IBAction)btnNextTouchUpInside:(id)sender {
+//    [RXVCMediator popToNearestInNavigationController:self.navigationController withString:@"rxpage://AViewController" animate:YES];
+    [RXVCMediator popToFarthestInNavigationController:self.navigationController withString:@"rxpage://AViewController" animate:YES];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    NSLog(@"query:%@", self.rx_query[@"data"]);
+}
+
 
 /*
 #pragma mark - Navigation

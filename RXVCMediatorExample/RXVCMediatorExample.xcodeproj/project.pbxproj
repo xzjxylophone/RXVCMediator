@@ -16,6 +16,12 @@
 		58B9A8711BF48FB5003DE017 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58B9A86F1BF48FB5003DE017 /* MainViewController.xib */; };
 		58B9A8751BF4910F003DE017 /* UIViewController+Mediator.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B9A8741BF4910F003DE017 /* UIViewController+Mediator.m */; };
 		58B9A8781BF49230003DE017 /* RXVCMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B9A8771BF49230003DE017 /* RXVCMediator.m */; };
+		C96DF0AA1E5C528900DB1EDD /* CViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C96DF0A81E5C528900DB1EDD /* CViewController.m */; };
+		C96DF0AB1E5C528900DB1EDD /* CViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C96DF0A91E5C528900DB1EDD /* CViewController.xib */; };
+		C96DF0AF1E5C545900DB1EDD /* AViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C96DF0AD1E5C545900DB1EDD /* AViewController.m */; };
+		C96DF0B01E5C545900DB1EDD /* AViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C96DF0AE1E5C545900DB1EDD /* AViewController.xib */; };
+		C96DF0B41E5C546300DB1EDD /* BViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C96DF0B21E5C546300DB1EDD /* BViewController.m */; };
+		C96DF0B51E5C546300DB1EDD /* BViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C96DF0B31E5C546300DB1EDD /* BViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +42,15 @@
 		58B9A8741BF4910F003DE017 /* UIViewController+Mediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Mediator.m"; sourceTree = "<group>"; };
 		58B9A8761BF49230003DE017 /* RXVCMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RXVCMediator.h; sourceTree = "<group>"; };
 		58B9A8771BF49230003DE017 /* RXVCMediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RXVCMediator.m; sourceTree = "<group>"; };
+		C96DF0A71E5C528900DB1EDD /* CViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CViewController.h; sourceTree = "<group>"; };
+		C96DF0A81E5C528900DB1EDD /* CViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CViewController.m; sourceTree = "<group>"; };
+		C96DF0A91E5C528900DB1EDD /* CViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CViewController.xib; sourceTree = "<group>"; };
+		C96DF0AC1E5C545900DB1EDD /* AViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AViewController.h; sourceTree = "<group>"; };
+		C96DF0AD1E5C545900DB1EDD /* AViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AViewController.m; sourceTree = "<group>"; };
+		C96DF0AE1E5C545900DB1EDD /* AViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AViewController.xib; sourceTree = "<group>"; };
+		C96DF0B11E5C546300DB1EDD /* BViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BViewController.h; sourceTree = "<group>"; };
+		C96DF0B21E5C546300DB1EDD /* BViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BViewController.m; sourceTree = "<group>"; };
+		C96DF0B31E5C546300DB1EDD /* BViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +95,15 @@
 				5816E8761BF5C88D00A4B7ED /* FirstViewController.h */,
 				5816E8771BF5C88D00A4B7ED /* FirstViewController.m */,
 				5816E8781BF5C88D00A4B7ED /* FirstViewController.xib */,
+				C96DF0AC1E5C545900DB1EDD /* AViewController.h */,
+				C96DF0AD1E5C545900DB1EDD /* AViewController.m */,
+				C96DF0AE1E5C545900DB1EDD /* AViewController.xib */,
+				C96DF0B11E5C546300DB1EDD /* BViewController.h */,
+				C96DF0B21E5C546300DB1EDD /* BViewController.m */,
+				C96DF0B31E5C546300DB1EDD /* BViewController.xib */,
+				C96DF0A71E5C528900DB1EDD /* CViewController.h */,
+				C96DF0A81E5C528900DB1EDD /* CViewController.m */,
+				C96DF0A91E5C528900DB1EDD /* CViewController.xib */,
 			);
 			path = RXVCMediatorExample;
 			sourceTree = "<group>";
@@ -136,6 +160,7 @@
 				TargetAttributes = {
 					58B9A8521BF48EFB003DE017 = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = BMW986WME7;
 					};
 				};
 			};
@@ -162,8 +187,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C96DF0B01E5C545900DB1EDD /* AViewController.xib in Resources */,
 				58B9A8631BF48EFB003DE017 /* Assets.xcassets in Resources */,
 				5816E87A1BF5C88D00A4B7ED /* FirstViewController.xib in Resources */,
+				C96DF0B51E5C546300DB1EDD /* BViewController.xib in Resources */,
+				C96DF0AB1E5C528900DB1EDD /* CViewController.xib in Resources */,
 				58B9A8711BF48FB5003DE017 /* MainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -176,8 +204,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				58B9A85B1BF48EFB003DE017 /* AppDelegate.m in Sources */,
+				C96DF0AA1E5C528900DB1EDD /* CViewController.m in Sources */,
 				5816E8791BF5C88D00A4B7ED /* FirstViewController.m in Sources */,
 				58B9A8701BF48FB5003DE017 /* MainViewController.m in Sources */,
+				C96DF0B41E5C546300DB1EDD /* BViewController.m in Sources */,
+				C96DF0AF1E5C545900DB1EDD /* AViewController.m in Sources */,
 				58B9A8581BF48EFB003DE017 /* main.m in Sources */,
 				58B9A8751BF4910F003DE017 /* UIViewController+Mediator.m in Sources */,
 				58B9A8781BF49230003DE017 /* RXVCMediator.m in Sources */,
@@ -272,6 +303,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = BMW986WME7;
 				INFOPLIST_FILE = RXVCMediatorExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -285,6 +317,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = BMW986WME7;
 				INFOPLIST_FILE = RXVCMediatorExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

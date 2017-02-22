@@ -1,38 +1,41 @@
 //
-//  MainViewController.m
+//  AViewController.m
 //  RXVCMediatorExample
 //
-//  Created by Rush.D.Xzj on 15/11/12.
-//  Copyright © 2015年 Rush.D.Xzj. All rights reserved.
+//  Created by ceshi on 17/2/21.
+//  Copyright © 2017年 Rush.D.Xzj. All rights reserved.
 //
 
-#import "MainViewController.h"
+#import "AViewController.h"
 #import "RXVCMediatorHeader.h"
 
-@interface MainViewController ()
+@interface AViewController ()
 
 @end
 
-@implementation MainViewController
-- (IBAction)btnNextTouchUpInside:(id)sender {
-    [RXVCMediator pushInNavigationController:self.navigationController withString:@"rxpage://AViewController" query:@{@"data":@(1)} animate:NO];
-}
-
-
-
+@implementation AViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    NSLog(@"string=%@, query=%@, params=%@", self.rx_string, self.rx_query, self.rx_params);
     
-    self.title = @"Main";
     
+    self.title = @"A";
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)btnNextTouchUpInside:(id)sender {
+    [RXVCMediator pushInNavigationController:self.navigationController withString:@"rxpage://BViewController" query:@{@"data":@(2)} animate:NO];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    NSLog(@"query:%@", self.rx_query[@"data"]);
 }
 
 /*
