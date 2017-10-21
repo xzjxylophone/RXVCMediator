@@ -74,6 +74,11 @@
     }
 }
 
++ (BOOL)testOK
+{
+    return true;
+}
+
 
 
 

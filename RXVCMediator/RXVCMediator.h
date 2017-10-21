@@ -19,7 +19,7 @@
 
 + (BOOL)presentInNavigationController:(UINavigationController *)nc withString:(NSString *)str query:(NSDictionary *)query animate:(BOOL)animate completion:(void (^)(void))completion;
 
-
++ (BOOL)testOK;
 
 // 返回最近的一个VC
 + (BOOL)popToNearestInNavigationController:(UINavigationController *)nc withString:(NSString *)str animate:(BOOL)animate;
